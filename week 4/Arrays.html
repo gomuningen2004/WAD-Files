@@ -1,22 +1,16 @@
 <html>
 <head>
     <title>Arrays</title>
-    <style>
-        * {
-            font-size: 25px;
-        }
-    </style>
 </head>
 <body>
-    <h1>Outputs are in the console</h1>
     <script>
         const fruits = ["Banana", "Orange", "Apple", "Mango"];
 
         console.log("Array elements:", fruits);
         console.log("Length of array:", fruits.length);
         console.log("Index of Apple in the list:", fruits.indexOf("Apple"));
-        console.log("Sorted array:", [...fruits].sort());
-        console.log("Reverse array:", [...fruits].reverse());
+        console.log("Sorted array:", fruits.sort());
+        console.log("Reverse array:", fruits.reverse());
 
         const pushPopArray = fruits;
         pushPopArray.push("Kiwi");
