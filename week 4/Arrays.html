@@ -1,0 +1,72 @@
+<html>
+    <head>
+        <title>Arrays</title>
+        <style>
+            *{
+                font-size: 25px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Array elements</h1>
+        <p id="demo1"></p>
+
+        <h1>Length of array</h1>
+        <p id="demo2"></p>
+
+        <h1>Index of Apple in the list</h1>
+        <p id="demo3"></p>
+
+        <h1>Sorted array</h1>
+        <p id="demo4"></p>
+
+        <h1>Reverse array</h1>
+        <p id="demo5"></p>
+
+        <h1>Pushing and popping</h1>
+        <p id="demo6"></p>
+        <p id="demo7"></p>
+
+        <h1>Slicing the array from index 1 to 3</h1>
+        <p id="demo8"></p>
+
+        <h1>Concatination of two arrays</h1>
+        <p><b>New array to be concated</b></p>
+        <p id="demo9"></p>
+        <p><b>New array after concatination</b></p>
+        <p id="demo10"></p>
+
+        <script>
+            const fruits = ["Banana", "Orange", "Apple", "Mango"];
+            document.getElementById("demo1").innerHTML = fruits;
+
+            document.getElementById("demo2").innerHTML = fruits.length;
+
+            document.getElementById("demo3").innerHTML = fruits.indexOf("Apple");
+
+            const demo1 = fruits;
+            document.getElementById("demo4").innerHTML = demo1.sort();
+
+            const demo2 = fruits;
+            document.getElementById("demo5").innerHTML = demo2.reverse();
+
+            const demo3 = fruits;
+            let element = "Kiwi";
+            demo3.push(element);
+            document.getElementById("demo6").innerHTML = demo3;
+            demo3.pop();
+            document.getElementById("demo7").innerHTML = demo3;
+
+            const demo4 = fruits;
+            document.getElementById("demo8").innerHTML = demo4.slice(1, 3);
+
+            const demo5 = fruits;
+            
+            const concatarray = ["Kiwi", "Papaya", "Dragon fruit", "Watermelon"];
+            document.getElementById("demo9").innerHTML = concatarray;
+            const resultarray = demo5.concat(concatarray);
+            document.getElementById("demo10").innerHTML = resultarray;
+        </script>
+
+    </body>
+</html>
