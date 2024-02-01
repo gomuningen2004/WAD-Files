@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/DOM.css">
+    <title>Attendance Tracker</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Attendance Tracker</h1>
+        <label for="totalStrength">Total Strength:</label>
+        <input type="number" id="totalStrength" placeholder="Enter total strength">
+
+        <label for="presentees">Presentees:</label>
+        <input type="number" id="presentees" placeholder="Enter number of presentees">
+
+        <label for="absentees">Absentees:</label>
+        <input type="text" id="absentees" readonly>
+
+        <label for="todaysClassStrength">Today's Class Strength:</label>
+        <input type="text" id="todaysClassStrength" readonly>
+
+        <button onclick="calculateAttendance()">Calculate</button>
+    </div>
+
+    <script src="./assets/DOM.js"></script>
+</body>
+</html>

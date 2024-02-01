@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <title>Move items</title>
+        <link rel="stylesheet" href="./assets/Mover.css">
+    </head>
+    <body>
+        <form action="#">
+            <p>
+                <label>X coordinate: <input type="text" id="leftcoord" size="3"></label>
+                <br>
+                <label>Y coordinate: <input type="text" id="topcoord" size="3"></label>
+                <br>
+                <input type="button" value="Move it" onclick="moveit('img', document.getElementById('topcoord').value, document.getElementById('leftcoord').value)">
+            </p>
+        </form>
+        <div id="img">
+            <img src="../assets/photo-1544656376-ffe19d4b7353.avif" alt="starry sky">
+        </div>
+    </body>
+    <script src="./assets/Mover.js"></script>
+</html>

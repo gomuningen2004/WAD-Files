@@ -1,0 +1,40 @@
+<html>
+    <head>
+        <title>Dynamic  values</title>
+    </head>
+    <body>
+        <form action="#">
+            <p style="font-weight: bold;">
+                <span style="font-style: italic;">
+                    Customer Information
+                </span>
+                <br>
+                <label>
+                    Name : <input type="text" onmouseover="messages(0)" onmouseout="messages(4)">
+                </label>
+                <br>
+                <label>
+                    Email : <input type="text" onmouseover="messages(1)" onmouseout="messages(4)">
+                </label>
+                <br><br>
+                <span style="font-style: italic;">
+                    To create an account, provide the following :
+                </span>
+                <br><br>
+                <label>
+                    User ID : <input type="text" onmouseover="messages(2)" onmouseout="messages(4)">
+                </label>
+                <br>
+                <label>
+                    Password : <input type="password" onmouseover="messages(3)" onmouseout="messages(4)">
+                </label>
+                <br>
+                <textarea id="advicebox" cols="50" rows="3" style="position: absolute; left: 250px; top: 10px;">This box provides advice on what to fill in respective fields when you put the mouse over it</textarea>
+                <br><br>
+                <input type="submit" value="submit">
+                <input type="reset" value="reset">
+            </p>
+        </form>
+    </body>
+    <script src="./assets/Dynamic values.js"></script>
+</html>
