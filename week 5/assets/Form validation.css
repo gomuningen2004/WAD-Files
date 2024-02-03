@@ -59,8 +59,6 @@ input[type="checkbox"] {
     margin-right: 15px;
 }
 
-
-/* Submit Button */
 button {
     background-color: #4caf50;
     color: #fff;
@@ -76,7 +74,6 @@ button:hover {
     background-color: #45a049;
 }
 
-/* Responsive Design */
 @media (max-width: 600px) {
     #myForm {
         width: 80%;
