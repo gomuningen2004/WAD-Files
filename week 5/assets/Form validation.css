@@ -1,46 +1,84 @@
+/* Form Container */
 body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
-    margin: 20px;
-    font-size: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
 }
 
-form {
-    max-width: 900px;
-    margin: 0 auto;
+#myForm {
     background-color: #fff;
     padding: 20px;
-    border-radius: 5px;
+    border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
+/* Labels and Inputs */
 label {
-    display: inline-block;
-    margin-bottom: 10px;
+    display: block;
+    margin-bottom: 8px;
 }
 
-div {
-    text-align: center;
-}
-
-input{
-    
+input {
+    width: 100%;
     padding: 8px;
-    margin-bottom: 10px;
+    margin-bottom: 16px;
     box-sizing: border-box;
-    display: inline-block;
-    font-size: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
 }
 
+/* Gender Radio Buttons */
+input[type="radio"] {
+    margin-right: 4px;
+}
+
+/* Education Checkboxes */
+input[type="checkbox"] {
+    margin-right: 4px;
+}
+
+.Gender {
+    display: flex;
+    align-items: center;
+}
+
+.Gender label {
+    margin-right: 15px;
+}
+
+.Education {
+    display: flex;
+    align-items: center;
+}
+
+.Education label {
+    margin-right: 15px;
+}
+
+
+/* Submit Button */
 button {
-    padding: 10px;
     background-color: #4caf50;
-    color: white;
+    color: #fff;
+    padding: 10px 15px;
     border: none;
+    border-radius: 4px;
     cursor: pointer;
-    font-size: 20px;
+    margin: 0 auto;
+    display: block;
 }
 
 button:hover {
     background-color: #45a049;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    #myForm {
+        width: 80%;
+    }
 }

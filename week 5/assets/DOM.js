@@ -11,7 +11,6 @@ function calculateAttendance() {
 
         // Display results
         document.getElementById('absentees').value = absentees;
-        document.getElementById('todaysClassStrength').value = todaysClassStrength;
     } else {
         alert("Please enter valid numeric values for Total Strength and Presentees.");
     }
