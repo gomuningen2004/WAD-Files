@@ -7,7 +7,6 @@ function calculateAttendance() {
     if (!isNaN(totalStrength) && !isNaN(presentees)) {
         // Calculate absentees and today's class strength
         var absentees = totalStrength - presentees;
-        var todaysClassStrength = presentees;
 
         // Display results
         document.getElementById('absentees').value = absentees;
