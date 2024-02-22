@@ -1,0 +1,23 @@
+<?xml-stylesheet href="studentxslt.xsl" type="text/xsl"?>
+<studentinfo>
+    <student>
+        <sname>John Doe</sname>
+        <spinno>12345</spinno>
+        <sbranch>CSE</sbranch>
+    </student>
+    <student>
+        <sname>John Doe</sname>
+        <spinno>12345</spinno>
+        <sbranch>CSE</sbranch>
+    </student>
+    <student>
+        <sname>John Doe</sname>
+        <spinno>12345</spinno>
+        <sbranch>CSE</sbranch>
+    </student>
+    <student>
+        <sname>John Doe</sname>
+        <spinno>12345</spinno>
+        <sbranch>CSE</sbranch>
+    </student>
+</studentinfo>

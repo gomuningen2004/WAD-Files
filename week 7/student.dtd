@@ -1,0 +1,4 @@
+<!ELEMENT student (sname, spinno, sbranch)>
+<!ELEMENT sname (#PCDATA)>
+<!ELEMENT spinno (#PCDATA)>
+<!ELEMENT sbranch (#PCDATA)>

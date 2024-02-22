@@ -1,0 +1,6 @@
+<?xml-stylesheet href="week 7\assets\xml with css.css" type="text/css"?>
+<student>
+    <sname>John Doe</sname>
+    <spinno>12345</spinno>
+    <sbranch>CSE</sbranch>
+</student>
