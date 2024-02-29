@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Display XML Content</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <script>
+        var text = "<book>" +
+            "<title>Everyday Italian</title>" +
+            "<author>Giada De Laurentiis</author>" +
+            "<year>2005</year>" +
+            "</book>";
+
+        var parser = new DOMParser();
+        var xmlDoc = parser.parseFromString(text, "text/xml");
+        var nodes = xmlDoc.documentElement.childNodes;
+
+        var txt = "";
+        for (var i = 0; i < nodes.length; i++) {
+            txt += nodes[i].nodeName + ": " + nodes[i].textContent + "<br>";
+        }
+
+        document.getElementById("demo").innerHTML = txt;
+    </script>
+</body>
+</html>
