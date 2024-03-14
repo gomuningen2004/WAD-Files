@@ -1,7 +1,11 @@
 <html>
     <head>
         <title>Show/Hide Image</title>
-        <link rel="stylesheet" href="./assets/Show or hide.css">
+        <style>
+            #imageContainer {
+                display: none;
+            }
+        </style>
     </head>
     <body>
 
@@ -14,5 +18,17 @@
         <button onclick="toggleImage()">Toggle Image</button>
 
     </body>
-    <script src="./assets/Show or hide.js"></script>
+    <script>
+        function toggleImage() {
+            var imageContainer = document.getElementById("imageContainer");
+            var image = document.getElementById("myImage");
+
+            if (imageContainer.style.display === "none") {
+                imageContainer.style.display = "block";
+                image.src = "../assets/@Getsesko.jpeg";
+            } else {
+                imageContainer.style.display = "none";
+            }
+        }
+    </script>
 </html>

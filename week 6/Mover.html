@@ -1,7 +1,13 @@
 <html>
     <head>
         <title>Move items</title>
-        <link rel="stylesheet" href="./assets/Mover.css">
+        <style>
+            #img{
+                position: absolute;
+                top: 115px;
+                left: 0;
+            }
+        </style>
     </head>
     <body>
         <form action="#">
@@ -17,5 +23,11 @@
             <img src="../assets/photo-1544656376-ffe19d4b7353.avif" alt="starry sky">
         </div>
     </body>
-    <script src="./assets/Mover.js"></script>
+    <script>
+        function moveit(img, newtop, newleft){
+            var image = document.getElementById(img).style;
+            image.top = newtop + 'px';
+            image.left = newleft + 'px';
+        }
+    </script>
 </html>
