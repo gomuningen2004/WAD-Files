@@ -1,8 +1,19 @@
 <html>
     <head>
         <title>Functions</title>
-        <link rel="stylesheet" href="./assets/functions.css">
-        <script src="./assets/functions.js"></script>
+        <style>
+            body {
+                text-align: center;
+                font-size: 25px;
+                margin: 50px;
+            }
+
+            input, button {
+                margin: 5px;
+                padding: 8px;
+                font-size: 15px;
+            }
+        </style>
     </head>
     <body>
 
@@ -26,4 +37,39 @@
         <h3>Result:</h3>
         <p id="result"></p>
     </body>
+
+    <script>
+        function add() {
+            var num1 = parseFloat(document.getElementById('num1').value);
+            var num2 = parseFloat(document.getElementById('num2').value);
+            var result = num1 + num2;
+            document.getElementById('result').innerText = result;
+        }
+
+        function subtract() {
+            var num1 = parseFloat(document.getElementById('num1').value);
+            var num2 = parseFloat(document.getElementById('num2').value);
+            var result = num1 - num2;
+            document.getElementById('result').innerText = result;
+        }
+
+        function multiply() {
+            var num1 = parseFloat(document.getElementById('num1').value);
+            var num2 = parseFloat(document.getElementById('num2').value);
+            var result = num1 * num2;
+            document.getElementById('result').innerText = result;
+        }
+
+        function divide() {
+            var num1 = parseFloat(document.getElementById('num1').value);
+            var num2 = parseFloat(document.getElementById('num2').value);
+
+            if (num2 === 0) {
+                document.getElementById('result').innerText = 'Cannot divide by zero!';
+            } else {
+                var result = num1 / num2;
+                document.getElementById('result').innerText = result;
+            }
+        }
+    </script>
 </html>

@@ -1,10 +1,20 @@
 <html>
     <head>
         <title>Message displays</title>
-        <link rel="stylesheet" href="./assets/Message displays.css">
+        <style>
+            *{
+                font-size: 25px;
+            }
+        </style>
     </head>
     <body>
         <p id="demo"></p>
-        <script src="./assets/Message displays.js"></script>
+        <script>
+            document.getElementById("demo").innerHTML = "This is a message written using inner Html";
+            document.write("This is a statement displayed using document.write");
+            alert("This is a statement displayed using alert");
+            window.alert("This is a statement displayed using window.alert");
+            console.log("This is a statement displayed using console.log");
+        </script>
     </body>
 </html>
