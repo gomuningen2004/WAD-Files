@@ -1,7 +1,22 @@
 <html>
     <head>
         <title>Radio Alert</title>
-        <link rel="stylesheet" href="./assets/radio alert.css">
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                text-align: center;
+                margin: 300px;
+            }
+
+            label {
+                font-size: 18px;
+                margin-right: 10px;
+            }
+
+            input[type="radio"] {
+                margin-right: 5px;
+            }
+        </style>
     </head>
     <body>
         <label for="gender">Gender: </label>
@@ -10,5 +25,16 @@
         <input type="radio" id="Female" name="gender" value="Female" onclick="galert(2)">
         <label for="Female">Female</label>
     </body>
-    <script src="./assets/radio alert.js"></script>
+    <script>
+        function galert(g) {
+            switch (g) {
+                case 1:
+                    window.alert("You have selected Male");
+                    break;
+                case 2:
+                    window.alert("You have selected Female");
+                    break;
+            }
+        }
+    </script>
 </html>

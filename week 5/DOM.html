@@ -1,26 +1,85 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/DOM.css">
-    <title>Attendance Tracker</title>
-</head>
-<body>
-    <div class="container">
-        <h1>Attendance Tracker</h1>
-        <label for="totalStrength">Total Strength:</label>
-        <input type="number" id="totalStrength" placeholder="Enter total strength">
+<html>
+    <head>
+        <title>Attendance Tracker</title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                margin: 0;
+                padding: 0;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                height: 100vh;
+                background-color: #f4f4f4;
+            }
 
-        <label for="presentees">Presentees:</label>
-        <input type="number" id="presentees" placeholder="Enter number of presentees">
+            .container {
+                background-color: #fff;
+                padding: 20px;
+                border-radius: 8px;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
 
-        <label for="absentees">Absentees:</label>
-        <input type="text" id="absentees" readonly>
+            label {
+                display: block;
+                margin-bottom: 8px;
+            }
 
-        <button onclick="calculateAttendance()">Calculate</button>
-    </div>
+            input {
+                width: 100%;
+                padding: 8px;
+                margin-bottom: 16px;
+                box-sizing: border-box;
+            }
 
-    <script src="./assets/DOM.js"></script>
-</body>
+            button {
+                background-color: #4caf50;
+                color: #fff;
+                padding: 10px;
+                border: none;
+                border-radius: 4px;
+                cursor: pointer;
+            }
+
+            button:hover {
+                background-color: #45a049;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <h1>Attendance Tracker</h1>
+            <label for="totalStrength">Total Strength:</label>
+            <input type="number" id="totalStrength" placeholder="Enter total strength">
+
+            <label for="presentees">Presentees:</label>
+            <input type="number" id="presentees" placeholder="Enter number of presentees">
+
+            <label for="absentees">Absentees:</label>
+            <input type="text" id="absentees" readonly>
+
+            <button onclick="calculateAttendance()">Calculate</button>
+        </div>
+    </body>
+    <script>
+        function calculateAttendance() {
+            // Get input values
+            var totalStrength = parseFloat(document.getElementById('totalStrength').value);
+            var presentees = parseFloat(document.getElementById('presentees').value);
+
+            // Check if input values are valid numbers
+            if (!isNaN(totalStrength) && !isNaN(presentees)) {
+                // Calculate absentees and today's class strength
+                var absentees = totalStrength - presentees;
+
+                // Display results
+                document.getElementById('absentees').value = absentees;
+            } else {
+                alert("Please enter valid numeric values for Total Strength and Presentees.");
+            }
+        }
+    </script>
 </html>
